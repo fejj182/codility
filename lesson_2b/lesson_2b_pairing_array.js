@@ -6,29 +6,19 @@ function pairingArray(array) {
 
     const sortedArray = array.sort()
 
-    let matched
-    let matchedNumber
+    let matchedNumber = undefined
 
-    sortedArray.every((number) => {
+    for (let x = 0; x < array.length; x++) {
         if (matchedNumber === undefined) {
-            matchedNumber = number
+            matchedNumber = sortedArray[x]
         } else {
-            if (number === matchedNumber) {
-                matched = true
+            if (sortedArray[x] === matchedNumber) {
+                matchedNumber = undefined
             } else {
-                if (matched === true) {
-                    matched = false
-                    matchedNumber = number
-                } else {
-                    return false
-                }
+                break
             }
         }
-
-        console.log({matched});
-
-        return true
-    })
+    }
 
     return matchedNumber
 

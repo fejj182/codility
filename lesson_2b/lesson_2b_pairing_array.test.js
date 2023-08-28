@@ -34,6 +34,6 @@ describe('pairing array', () => {
     });
 
     it('should return unpaired number', () => {
-        expect(pairingArray([-9,3,9,3,-9,7,9])).toBe(7)
-    });
+        expect(pairingArray([1,1,1,2,2,])).toBe(1)
+    })
 });
