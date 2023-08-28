@@ -8,23 +8,23 @@ function longestBinaryGap(number) {
 
     console.log({binaryAsArray, length: binaryAsArray.length})
 
-    if (binaryAsArray[0] !== '' || binaryAsArray[binaryAsArray.length - 1] !== '' && binaryAsArray.length <= 2) {
+    if (binaryAsArray[0] === '' && binaryAsArray[binaryAsArray.length - 1] === '' || binaryAsArray.length > 2) {
+        const trimmedBinaryAsArray = binaryAsArray.slice(1,binaryAsArray.length - 1)
+
+        console.log({trimmedBinaryAsArray})
+
+        let maxLengthOfZeros = 0
+
+        const zeros = trimmedBinaryAsArray.forEach(splitNumbers => {
+            if (splitNumbers.length > maxLengthOfZeros) {
+                maxLengthOfZeros = splitNumbers.length
+            }
+        })
+
+        return maxLengthOfZeros;
+    } else {
         return 0
     }
-
-    const trimmedBinaryAsArray = binaryAsArray.slice(1,binaryAsArray.length - 1)
-
-    console.log({trimmedBinaryAsArray})
-
-    let maxLengthOfZeros = 0
-
-    const zeros = trimmedBinaryAsArray.forEach(splitNumbers => {
-        if (splitNumbers.length > maxLengthOfZeros) {
-            maxLengthOfZeros = splitNumbers.length
-        }
-    })
-
-    return maxLengthOfZeros;
 };
 
 module.exports = longestBinaryGap;
