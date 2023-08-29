@@ -1,15 +1,14 @@
-function earliestLeaves(desiredPosition, leaves) {
+function earliestLeaves(desiredPosition, time) {
     const positions = {}
-    let missingPosition;
-    for (let l = 1; l <= desiredPosition; l++) {
-        const foundPosition = leaves.findIndex((leaf) => leaf === l)
-        if (foundPosition > -1) {
-            positions[l] = foundPosition
-        } else {
-            missingPosition = true
+    let maxTime = -1
+    for (let t = 0; t < time.length; t++) {
+        if (time[t] <= desiredPosition && !positions[time[t]]) {
+            positions[time[t]] = t 
+            maxTime = time[t]
         }
     }
-    return !missingPosition ? Math.max(...Object.values(positions)) : -1
+    const positionsLength = Object.keys(positions).length
+    return positions[maxTime] !== undefined && positionsLength === desiredPosition ? positions[maxTime] : -1
 }
 
 module.exports = earliestLeaves
