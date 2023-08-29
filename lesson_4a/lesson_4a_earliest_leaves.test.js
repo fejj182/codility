@@ -14,7 +14,7 @@ describe('earliest leaves', () => {
     });
 
     it('for two leaves reversed, return the time taken', () => {
-        expect(earliestLeaves(2, [2,1])).toBe(0)
+        expect(earliestLeaves(2, [2,1])).toBe(1)
     });
 
     it('if a leaf missing, return -1', () => {
@@ -32,4 +32,8 @@ describe('earliest leaves', () => {
     it('for given test case', () => {
         expect(earliestLeaves(5, [1,3,1,4,2,3,5,4])).toBe(6)
     });
+
+    it('if middle step lands last', () => {
+        expect(earliestLeaves(3, [1, 3, 1, 3, 2, 1, 3])).toBe(4)
+    })
 });
