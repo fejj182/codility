@@ -21,7 +21,7 @@ describe('earliest leaves', () => {
         expect(earliestLeaves(1, [2])).toBe(-1)
     });
 
-    it('if a leaf missing, return -1 ', () => {
+    it('if a leaf missing and repeated, return -1 ', () => {
         expect(earliestLeaves(2, [2, 2, 2, 2, 2])).toBe(-1)
     });
 
