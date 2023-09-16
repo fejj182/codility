@@ -15,4 +15,4 @@ function solution(array, rotations) {
     return array
 }
 
-module.exports = solution
+export default solution

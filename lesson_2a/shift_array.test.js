@@ -1,4 +1,4 @@
-const solution = require('./lesson_2a_shift_array')
+import solution from "./shift_array";
 
 describe('solution', () => {
     it('should rotate array to the right 1 time', () => {

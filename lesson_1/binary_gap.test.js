@@ -1,4 +1,4 @@
-const longestBinaryGap = require("./lesson_1_binary_gap");
+import longestBinaryGap from "./binary_gap";
 
 describe('binary gap', () => {
     it('binary starts and ends in 1 and has binary gap', () => {

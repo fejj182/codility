@@ -21,4 +21,4 @@ function countSort(array, range) {
 
 }
 
-module.exports = countSort
+export default countSort

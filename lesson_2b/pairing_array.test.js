@@ -1,4 +1,4 @@
-const pairingArray = require("./lesson_2b_pairing_array");
+import pairingArray from "./pairing_array";
 
 describe('pairing array', () => {
     it('should return an integer', () => {

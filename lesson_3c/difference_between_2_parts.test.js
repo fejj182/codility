@@ -1,4 +1,4 @@
-const difference = require("./lesson_3c_difference_between_2_parts");
+import difference from "./difference_between_2_parts";
 
 describe('difference', () => {
     it('array with index 2', () => {

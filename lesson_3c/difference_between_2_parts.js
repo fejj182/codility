@@ -16,4 +16,4 @@ function difference(array) {
     return minDifference
 }
 
-module.exports = difference
+export default difference

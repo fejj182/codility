@@ -22,4 +22,4 @@ function howManyPassingCars(cars) {
     return passingCars <= 1000000000 ? passingCars : -1
 }
 
-module.exports = howManyPassingCars
+export default howManyPassingCars

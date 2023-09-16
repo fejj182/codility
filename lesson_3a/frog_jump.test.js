@@ -1,4 +1,4 @@
-const frogJump = require("./lesson_3a_frog_jump");
+import frogJump from "./frog_jump";
 
 describe('frog_jump', () => {
     it('should jump 1 place if reaches target exactly', () => {

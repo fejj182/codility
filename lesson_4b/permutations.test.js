@@ -1,4 +1,4 @@
-const isPermutation = require("./lesson_4b_permutations");
+import isPermutation from "./permutations";
 
 describe('isPermutation', () => {
     it('should return 1 if permutation', () => {

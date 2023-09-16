@@ -1,4 +1,4 @@
-const mergeSort = require("./merge_sort");
+import mergeSort from "./merge_sort";
 
 //NOTE: you iterate through an array and create a count of all the occurrences of each possible number.
 //To know each possible number you must know the range.

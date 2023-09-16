@@ -1,4 +1,4 @@
-const howManyPassingCars = require("./lesson_5a_prefix_sums_passing_cars");
+import howManyPassingCars from "./prefix_sums_passing_cars";
 
 describe('howManyPassingCars', () => {
     it('should return 1 if east car before west car', () => {

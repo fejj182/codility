@@ -27,4 +27,4 @@ function longestBinaryGap(number) {
     }
 };
 
-module.exports = longestBinaryGap;
+export default longestBinaryGap

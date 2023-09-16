@@ -1,4 +1,4 @@
-const earliestLeaves = require("./lesson_4a_earliest_leaves");
+import earliestLeaves from "./earliest_leaves";
 
 describe('earliest leaves', () => {
     it('for a single leaf, return the time taken', () => {

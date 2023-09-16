@@ -11,4 +11,4 @@ function earliestLeaves(desiredPosition, time) {
     return positions[maxTime] !== undefined && positionsLength === desiredPosition ? positions[maxTime] : -1
 }
 
-module.exports = earliestLeaves
+export default earliestLeaves

@@ -24,4 +24,4 @@ function pairingArray(array) {
 
 }
 
-module.exports = pairingArray
+export default pairingArray

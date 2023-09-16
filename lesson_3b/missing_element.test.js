@@ -1,4 +1,4 @@
-const missingElement = require("./lesson_3b_missing_element");
+import missingElement from "./missing_element";
 
 describe('missing element', () => {
     it('should return missing element when in order and consecutive numbers at end', () => {

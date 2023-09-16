@@ -16,4 +16,4 @@ function isPermutation(array) {
     return Number(isPerm)
 }
 
-module.exports = isPermutation
+export default isPermutation

@@ -43,4 +43,4 @@ function merge(left, right) {
     return result
 }
 
-module.exports = mergeSort
+export default mergeSort

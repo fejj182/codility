@@ -14,4 +14,4 @@ function missingElement(array) {
     return expectedTotal + array.length + 1 - actualTotal
 }
 
-module.exports = missingElement
+export default missingElement

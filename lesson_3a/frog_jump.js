@@ -12,4 +12,4 @@ function frogJump(start, finish, distance) {
     return Math.ceil(stepsNeeded)
 }
 
-module.exports = frogJump
+export default frogJump
