@@ -1,21 +1,20 @@
 function selectionSort(array: number[]): number[] {
-    const sortedArray: number[] = []
-    let subArray = array
     for (let i=0; i < array.length; i++) {
         let minimum = {
-            number: subArray[0],
-            index: 0
+            number: array[i],
+            index: i
         }
-        for (let l=1; l < subArray.length; l++) {
-            if (subArray[l] < minimum.number) {
-                minimum.number = subArray[l]
+        for (let l=i+1; l < array.length; l++) {
+            if (array[l] < minimum.number) {
+                minimum.number = array[l]
                 minimum.index = l
             }
         }
-        sortedArray.push(minimum.number)
-        subArray = subArray.slice(0,minimum.index).concat(subArray.slice(minimum.index + 1))
+        const prevMin = array[i]
+        array[i] = minimum.number
+        array[minimum.index] = prevMin
     }
-    return sortedArray
+    return array
 }
 
 export default selectionSort
