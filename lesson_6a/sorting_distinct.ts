@@ -1,5 +1,7 @@
 function sortingDistinct(array: number[]): number {
-    const sortedArray: number[] = array.sort()
+    const sortedArray: number[] = array.sort((a,b) => {
+        return a - b
+    })
     let distinctNumbers: number = 0
     for (let i: number = 0; i < array.length; i++) {
         if (i === 0) {

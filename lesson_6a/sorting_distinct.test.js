@@ -36,4 +36,8 @@ describe('Sorting distinct', () => {
     it('test case 3', () => {
         expect(sortingDistinct([999999999,999999999,999999998,999999998])).toBe(2)
     });
+
+    it('jscript', () => {
+        expect(sortingDistinct([1,2,11,2])).toBe(3)
+    });
 });
