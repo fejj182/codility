@@ -6,17 +6,7 @@ function maxOfTriplets(array) {
         return a - b;
     })
 
-    let maxValueOfTriplet = array[0] * array[1] * array[2];
-    for (let i=0; i<array.length; i++) {
-        let j = (i + 1) >= array.length ? i + 1 - array.length : i + 1
-        let k = (i + 2) >= array.length ? i + 2 - array.length : i + 2
-
-        const valueOfTriplet =  array[i] * array[j] * array[k]
-        if (valueOfTriplet > maxValueOfTriplet) {
-            maxValueOfTriplet = valueOfTriplet
-        }
-    }
-    return maxValueOfTriplet;
+    return Math.max(array[0]*array[1]*array[array.length - 1], array[array.length-3]*array[array.length-2]*array[array.length-1])
 }
 
 export default maxOfTriplets
